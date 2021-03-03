@@ -16,7 +16,7 @@ export LD_LIBRARY_PATH=/usr/local/lib
 echo "=========== test nofsync ==========="
 for i in "${STORES[@]}"
 do
-	./cli.exe -d 30s -size ${SIZE} -s "$i" >> benchmarks/test.log 2>&1
+	./cli.exe -d 5s -size ${SIZE} -s "$i" >> benchmarks/test.log 2>&1
 done
 
 `rm  -fr .*db`
@@ -28,7 +28,7 @@ echo "=========== test fsync ==========="
 
 for i in "${STORES[@]}"
 do
-	./cli.exe -d 30s -size ${SIZE} -s "$i" -fsync >> benchmarks/test.log 2>&1
+	./cli.exe -d 5s -size ${SIZE} -s "$i" -fsync >> benchmarks/test.log 2>&1
 done
 
 `rm  -fr .*db` 
