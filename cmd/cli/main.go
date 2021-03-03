@@ -13,8 +13,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/smallnest/kvbench"
-	"github.com/smallnest/log"
+	"github.com/alphayan/kvbench"
 )
 
 var (
@@ -104,7 +103,7 @@ func testBatchWrite(name string, store kvbench.Store) {
 		}(i)
 	}
 	wg.Wait()
-	fmt.Printf("%s batch write test inserted: %d entries; took: %s s\n", name, total, time.Since(start))
+	fmt.Printf("%s batch-write-test inserted: %d entries; took: %s s\n", name, total, time.Since(start))
 }
 
 // test get
@@ -336,7 +335,7 @@ func getStore(s string, fsync bool, path string) (kvbench.Store, string, error) 
 		}
 		store, err = kvbench.NewLevelDBStore(path, fsync)
 	case "kv":
-		log.Warningf("kv store is unstable")
+		fmt.Println("kv store is unstable")
 		if path == "" {
 			path = "kv.db"
 		}
@@ -351,16 +350,6 @@ func getStore(s string, fsync bool, path string) (kvbench.Store, string, error) 
 			path = "buntdb.db"
 		}
 		store, err = kvbench.NewBuntdbStore(path, fsync)
-	case "rocksdb":
-		if path == "" {
-			path = "rocksdb.db"
-		}
-		store, err = kvbench.NewRocksdbStore(path, fsync)
-	case "pebble":
-		if path == "" {
-			path = "pebble.db"
-		}
-		store, err = kvbench.NewRocksdbStore(path, fsync)
 	case "pogreb":
 		if path == "" {
 			path = "pogreb.db"
@@ -369,6 +358,21 @@ func getStore(s string, fsync bool, path string) (kvbench.Store, string, error) 
 	case "nutsdb":
 		if path == "" {
 			path = "nutsdb.db"
+		}
+		store, err = kvbench.NewNutsdbStore(path, fsync)
+	case "sniper":
+		if path == "" {
+			path = "sniper.db"
+		}
+		store, err = kvbench.NewSniperStore(path, fsync)
+	case "pebble":
+		if path == "" {
+			path = "pebble.db"
+		}
+		store, err = kvbench.NewPebbleStore(path, fsync)
+	case "nustdb":
+		if path == "" {
+			path = "nustdb.db"
 		}
 		store, err = kvbench.NewNutsdbStore(path, fsync)
 	}

@@ -79,6 +79,9 @@ func (s *pebbleStore) Set(key, value []byte) error {
 
 func (s *pebbleStore) Get(key []byte) ([]byte, bool, error) {
 	v, closer, err := s.db.Get(key)
+	if err != nil {
+		return nil, false, err
+	}
 	closer.Close()
 	return v, v != nil, err
 }
