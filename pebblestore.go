@@ -96,7 +96,10 @@ func (s *pebbleStore) Keys(pattern []byte, limit int, withvals bool) ([][]byte, 
 	var vals [][]byte
 
 	io := &pebble.IterOptions{}
-	it := s.db.NewIter(io)
+	it, err := s.db.NewIter(io)
+	if err != nil {
+		return nil, nil, err
+	}
 	defer it.Close()
 	it.SeekGE(pattern)
 

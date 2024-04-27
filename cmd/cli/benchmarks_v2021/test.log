@@ -1,0 +1,202 @@
+duration=5s, c=24 size=256
+badger/nofsync batch-write-test inserted: 3695000 entries; took: 5.030152167s s
+badger/nofsync set rate: 209884 op/s, mean: 198 ns, took: 5 s
+badger/nofsync get rate: 483779 op/s, mean: 86 ns, took: 5 s
+badger/nofsync setmixed rate: 2984 op/s, mean: 335065 ns, took: 5 s
+badger/nofsync getmixed rate: 434473 op/s, mean: 95 ns, took: 5 s
+badger/nofsync del rate: 259813 op/s, mean: 160 ns, took: 5 s
+duration=5s, c=24 size=256
+bbolt/nofsync batch-write-test inserted: 678000 entries; took: 5.116068542s s
+bbolt/nofsync set rate: 14369 op/s, mean: 2899 ns, took: 5 s
+bbolt/nofsync get rate: 553010 op/s, mean: 75 ns, took: 5 s
+bbolt/nofsync setmixed rate: 5689 op/s, mean: 175776 ns, took: 5 s
+bbolt/nofsync getmixed rate: 378580 op/s, mean: 110 ns, took: 5 s
+bbolt/nofsync del rate: 14691 op/s, mean: 2836 ns, took: 5 s
+duration=5s, c=24 size=256
+bolt/nofsync batch-write-test inserted: 607000 entries; took: 5.195738916s s
+bolt/nofsync set rate: 11106 op/s, mean: 3751 ns, took: 5 s
+bolt/nofsync get rate: 484349 op/s, mean: 86 ns, took: 5 s
+bolt/nofsync setmixed rate: 4588 op/s, mean: 217943 ns, took: 5 s
+bolt/nofsync getmixed rate: 353376 op/s, mean: 117 ns, took: 5 s
+bolt/nofsync del rate: 12199 op/s, mean: 3415 ns, took: 5 s
+duration=5s, c=24 size=256
+leveldb/nofsync batch-write-test inserted: 999000 entries; took: 5.29863925s s
+leveldb/nofsync set rate: 192508 op/s, mean: 216 ns, took: 5 s
+leveldb/nofsync get rate: 539457 op/s, mean: 77 ns, took: 5 s
+leveldb/nofsync setmixed rate: 18628 op/s, mean: 53682 ns, took: 5 s
+leveldb/nofsync getmixed rate: 398408 op/s, mean: 104 ns, took: 5 s
+leveldb/nofsync del rate: 191771 op/s, mean: 217 ns, took: 5 s
+duration=5s, c=24 size=256
+kv store is unstable
+kv/nofsync batch-write-test inserted: 56000 entries; took: 9.336590417s s
+kv/nofsync set rate: 14364 op/s, mean: 2900 ns, took: 5 s
+kv/nofsync get rate: 133349 op/s, mean: 312 ns, took: 5 s
+kv/nofsync setmixed rate: 3582 op/s, mean: 279109 ns, took: 5 s
+kv/nofsync getmixed rate: 86000 op/s, mean: 484 ns, took: 5 s
+kv/nofsync del rate: 132375 op/s, mean: 314 ns, took: 5 s
+duration=5s, c=24 size=256
+buntdb/nofsync batch-write-test inserted: 2650000 entries; took: 5.059975709s s
+buntdb/nofsync set rate: 101070 op/s, mean: 412 ns, took: 5 s
+buntdb/nofsync get rate: 3714281 op/s, mean: 11 ns, took: 5 s
+buntdb/nofsync setmixed rate: 15330 op/s, mean: 65230 ns, took: 5 s
+buntdb/nofsync getmixed rate: 482013 op/s, mean: 86 ns, took: 5 s
+buntdb/nofsync del rate: 277303 op/s, mean: 150 ns, took: 5 s
+duration=5s, c=24 size=256
+pebble/nofsync batch-write-test inserted: 787000 entries; took: 5.820882166s s
+pebble/nofsync set rate: 540974 op/s, mean: 77 ns, took: 5 s
+pebble/nofsync get rate: 66833 op/s, mean: 623 ns, took: 5 s
+pebble/nofsync setmixed rate: 587749 op/s, mean: 1701 ns, took: 5 s
+pebble/nofsync getmixed rate: 550271 op/s, mean: 75 ns, took: 5 s
+pebble/nofsync del rate: 530635 op/s, mean: 78 ns, took: 5 s
+duration=5s, c=24 size=256
+pogreb/nofsync batch-write-test inserted: 615000 entries; took: 5.119796459s s
+pogreb/nofsync set rate: 112610 op/s, mean: 370 ns, took: 5 s
+pogreb/nofsync get rate: 4202549 op/s, mean: 9 ns, took: 5 s
+pogreb/nofsync setmixed rate: 31221 op/s, mean: 32029 ns, took: 5 s
+pogreb/nofsync getmixed rate: 1046032 op/s, mean: 39 ns, took: 5 s
+pogreb/nofsync del rate: 535176 op/s, mean: 77 ns, took: 5 s
+duration=5s, c=24 size=256
+nutsdb/nofsync batch-write-test inserted: 2350000 entries; took: 5.1030465s s
+nutsdb/nofsync set rate: 245155 op/s, mean: 169 ns, took: 5 s
+nutsdb/nofsync get rate: 1684673 op/s, mean: 24 ns, took: 5 s
+nutsdb/nofsync setmixed rate: 21241 op/s, mean: 47078 ns, took: 5 s
+nutsdb/nofsync getmixed rate: 861478 op/s, mean: 48 ns, took: 5 s
+nutsdb/nofsync del rate: 338401 op/s, mean: 123 ns, took: 5 s
+duration=5s, c=24 size=256
+sniper/nofsync batch-write-test inserted: 1226000 entries; took: 5.044880875s s
+sniper/nofsync set rate: 240891 op/s, mean: 172 ns, took: 5 s
+sniper/nofsync get rate: 846809 op/s, mean: 49 ns, took: 5 s
+sniper/nofsync setmixed rate: 11884 op/s, mean: 84141 ns, took: 5 s
+sniper/nofsync getmixed rate: 826402 op/s, mean: 50 ns, took: 5 s
+sniper/nofsync del rate: 18783018 op/s, mean: 2 ns, took: 5 s
+duration=5s, c=24 size=256
+btree/nofsync batch-write-test inserted: 3369000 entries; took: 5.043627542s s
+btree/nofsync set rate: 221340 op/s, mean: 188 ns, took: 5 s
+btree/nofsync get rate: 3840859 op/s, mean: 10 ns, took: 5 s
+btree/nofsync setmixed rate: 30833 op/s, mean: 32432 ns, took: 5 s
+btree/nofsync getmixed rate: 1050153 op/s, mean: 39 ns, took: 5 s
+btree/nofsync del rate: 757608 op/s, mean: 54 ns, took: 5 s
+duration=5s, c=24 size=256
+persistance disabled
+btree/memory/nofsync batch-write-test inserted: 3677000 entries; took: 5.04484425s s
+btree/memory/nofsync set rate: 1899757 op/s, mean: 21 ns, took: 5 s
+btree/memory/nofsync get rate: 3859914 op/s, mean: 10 ns, took: 5 s
+btree/memory/nofsync setmixed rate: 41661 op/s, mean: 24002 ns, took: 5 s
+btree/memory/nofsync getmixed rate: 1731116 op/s, mean: 24 ns, took: 5 s
+btree/memory/nofsync del rate: 2190872 op/s, mean: 19 ns, took: 5 s
+duration=5s, c=24 size=256
+map/nofsync batch-write-test inserted: 10871000 entries; took: 5.008864291s s
+map/nofsync set rate: 265917 op/s, mean: 156 ns, took: 5 s
+map/nofsync get rate: 4291281 op/s, mean: 9 ns, took: 5 s
+map/nofsync setmixed rate: 35424 op/s, mean: 28229 ns, took: 5 s
+map/nofsync getmixed rate: 1659907 op/s, mean: 25 ns, took: 5 s
+map/nofsync del rate: 244994 op/s, mean: 170 ns, took: 5 s
+duration=5s, c=24 size=256
+6047:M 28 Apr 04:25:49.209 * persistance disabled
+map/memory/nofsync batch-write-test inserted: 8662000 entries; took: 5.006043458s s
+map/memory/nofsync set rate: 1884502 op/s, mean: 22 ns, took: 5 s
+map/memory/nofsync get rate: 4405007 op/s, mean: 9 ns, took: 5 s
+map/memory/nofsync setmixed rate: 48813 op/s, mean: 20486 ns, took: 5 s
+map/memory/nofsync getmixed rate: 2897661 op/s, mean: 14 ns, took: 5 s
+map/memory/nofsync del rate: 2701756 op/s, mean: 15 ns, took: 5 s
+duration=5s, c=24 size=256
+badger/fsync batch-write-test inserted: 2665000 entries; took: 5.049192333s s
+badger/fsync set rate: 17335 op/s, mean: 2403 ns, took: 5 s
+badger/fsync get rate: 645121 op/s, mean: 64 ns, took: 5 s
+badger/fsync setmixed rate: 6613 op/s, mean: 151208 ns, took: 5 s
+badger/fsync getmixed rate: 213915 op/s, mean: 194 ns, took: 5 s
+badger/fsync del rate: 8820 op/s, mean: 4723 ns, took: 5 s
+duration=5s, c=24 size=256
+bbolt/fsync batch-write-test inserted: 513000 entries; took: 5.194018292s s
+bbolt/fsync set rate: 113 op/s, mean: 367450 ns, took: 5 s
+bbolt/fsync get rate: 775817 op/s, mean: 53 ns, took: 5 s
+bbolt/fsync setmixed rate: 121 op/s, mean: 8223980 ns, took: 5 s
+bbolt/fsync getmixed rate: 398759 op/s, mean: 104 ns, took: 5 s
+bbolt/fsync del rate: 111 op/s, mean: 373546 ns, took: 5 s
+duration=5s, c=24 size=256
+bolt/fsync batch-write-test inserted: 552000 entries; took: 5.313736791s s
+bolt/fsync set rate: 120 op/s, mean: 344729 ns, took: 5 s
+bolt/fsync get rate: 649946 op/s, mean: 64 ns, took: 5 s
+bolt/fsync setmixed rate: 121 op/s, mean: 8251848 ns, took: 5 s
+bolt/fsync getmixed rate: 370507 op/s, mean: 112 ns, took: 5 s
+bolt/fsync del rate: 118 op/s, mean: 352890 ns, took: 5 s
+duration=5s, c=24 size=256
+leveldb/fsync batch-write-test inserted: 729000 entries; took: 5.09198775s s
+leveldb/fsync set rate: 3921 op/s, mean: 10624 ns, took: 5 s
+leveldb/fsync get rate: 848528 op/s, mean: 49 ns, took: 5 s
+leveldb/fsync setmixed rate: 245 op/s, mean: 4068863 ns, took: 5 s
+leveldb/fsync getmixed rate: 852637 op/s, mean: 48 ns, took: 5 s
+leveldb/fsync del rate: 2918 op/s, mean: 14274 ns, took: 5 s
+duration=5s, c=24 size=256
+kv store is unstable
+kv/fsync batch-write-test inserted: 56000 entries; took: 9.104774042s s
+kv/fsync set rate: 15247 op/s, mean: 2732 ns, took: 5 s
+kv/fsync get rate: 147239 op/s, mean: 282 ns, took: 5 s
+kv/fsync setmixed rate: 4100 op/s, mean: 243880 ns, took: 5 s
+kv/fsync getmixed rate: 98446 op/s, mean: 423 ns, took: 5 s
+kv/fsync del rate: 146711 op/s, mean: 284 ns, took: 5 s
+duration=5s, c=24 size=256
+buntdb/fsync batch-write-test inserted: 742000 entries; took: 5.167213791s s
+buntdb/fsync set rate: 175 op/s, mean: 237013 ns, took: 5 s
+buntdb/fsync get rate: 3205356 op/s, mean: 12 ns, took: 5 s
+buntdb/fsync setmixed rate: 195 op/s, mean: 5119907 ns, took: 5 s
+buntdb/fsync getmixed rate: 6052 op/s, mean: 6884 ns, took: 5 s
+buntdb/fsync del rate: 189 op/s, mean: 220224 ns, took: 5 s
+duration=5s, c=24 size=256
+pebble/fsync batch-write-test inserted: 574000 entries; took: 5.165725959s s
+pebble/fsync set rate: 2713 op/s, mean: 15355 ns, took: 5 s
+pebble/fsync get rate: 2010383 op/s, mean: 20 ns, took: 5 s
+pebble/fsync setmixed rate: 240 op/s, mean: 4165352 ns, took: 5 s
+pebble/fsync getmixed rate: 1746927 op/s, mean: 23 ns, took: 5 s
+pebble/fsync del rate: 2885 op/s, mean: 14439 ns, took: 5 s
+duration=5s, c=24 size=256
+pogreb/fsync batch-write-test inserted: 24000 entries; took: 1m41.091634958s s
+pogreb/fsync set rate: 241 op/s, mean: 172657 ns, took: 5 s
+pogreb/fsync get rate: 3512163 op/s, mean: 11 ns, took: 5 s
+pogreb/fsync setmixed rate: 231 op/s, mean: 4312409 ns, took: 5 s
+pogreb/fsync getmixed rate: 5608 op/s, mean: 7428 ns, took: 5 s
+pogreb/fsync del rate: 244 op/s, mean: 170086 ns, took: 5 s
+duration=5s, c=24 size=256
+nutsdb/fsync batch-write-test inserted: 25000 entries; took: 1m43.812837666s s
+nutsdb/fsync set rate: 236 op/s, mean: 176066 ns, took: 5 s
+nutsdb/fsync get rate: 1809708 op/s, mean: 23 ns, took: 5 s
+nutsdb/fsync setmixed rate: 234 op/s, mean: 4260118 ns, took: 5 s
+nutsdb/fsync getmixed rate: 5688 op/s, mean: 7324 ns, took: 5 s
+nutsdb/fsync del rate: 244 op/s, mean: 170676 ns, took: 5 s
+duration=5s, c=24 size=256
+sniper/fsync batch-write-test inserted: 1180000 entries; took: 5.036743666s s
+sniper/fsync set rate: 243837 op/s, mean: 170 ns, took: 5 s
+sniper/fsync get rate: 838517 op/s, mean: 49 ns, took: 5 s
+sniper/fsync setmixed rate: 11501 op/s, mean: 86944 ns, took: 5 s
+sniper/fsync getmixed rate: 790358 op/s, mean: 52 ns, took: 5 s
+sniper/fsync del rate: 186282 op/s, mean: 223 ns, took: 5 s
+duration=5s, c=24 size=256
+btree/fsync batch-write-test inserted: 856000 entries; took: 5.156666458s s
+btree/fsync set rate: 247 op/s, mean: 168287 ns, took: 5 s
+btree/fsync get rate: 3399934 op/s, mean: 12 ns, took: 5 s
+btree/fsync setmixed rate: 242 op/s, mean: 4118267 ns, took: 5 s
+btree/fsync getmixed rate: 6020 op/s, mean: 6920 ns, took: 5 s
+btree/fsync del rate: 241 op/s, mean: 172763 ns, took: 5 s
+duration=5s, c=24 size=256
+persistance disabled
+btree/memory/fsync batch-write-test inserted: 3393000 entries; took: 5.042416958s s
+btree/memory/fsync set rate: 1878303 op/s, mean: 22 ns, took: 5 s
+btree/memory/fsync get rate: 3865362 op/s, mean: 10 ns, took: 5 s
+btree/memory/fsync setmixed rate: 40538 op/s, mean: 24667 ns, took: 5 s
+btree/memory/fsync getmixed rate: 1717278 op/s, mean: 24 ns, took: 5 s
+btree/memory/fsync del rate: 2398250 op/s, mean: 17 ns, took: 5 s
+duration=5s, c=24 size=256
+map/fsync batch-write-test inserted: 927000 entries; took: 5.142083542s s
+map/fsync set rate: 236 op/s, mean: 176361 ns, took: 5 s
+map/fsync get rate: 4478027 op/s, mean: 9 ns, took: 5 s
+map/fsync setmixed rate: 238 op/s, mean: 4189730 ns, took: 5 s
+map/fsync getmixed rate: 5887 op/s, mean: 7077 ns, took: 5 s
+map/fsync del rate: 239 op/s, mean: 174112 ns, took: 5 s
+duration=5s, c=24 size=256
+6249:M 28 Apr 04:35:03.027 * persistance disabled
+map/memory/fsync batch-write-test inserted: 7918000 entries; took: 5.007647792s s
+map/memory/fsync set rate: 1782628 op/s, mean: 23 ns, took: 5 s
+map/memory/fsync get rate: 4409870 op/s, mean: 9 ns, took: 5 s
+map/memory/fsync setmixed rate: 47805 op/s, mean: 20918 ns, took: 5 s
+map/memory/fsync getmixed rate: 2780959 op/s, mean: 14 ns, took: 5 s
+map/memory/fsync del rate: 2634488 op/s, mean: 15 ns, took: 5 s

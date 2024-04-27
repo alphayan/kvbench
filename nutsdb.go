@@ -3,7 +3,7 @@ package kvbench
 import (
 	"sync"
 
-	"github.com/xujiajun/nutsdb"
+	"github.com/nutsdb/nutsdb"
 )
 
 var nutsdbBucket = "keys"
@@ -63,7 +63,7 @@ func (s *nutsdbStore) PGet(keys [][]byte) ([][]byte, []bool, error) {
 		for i, k := range keys {
 			e, err := tx.Get(nutsdbBucket, k)
 			if e != nil {
-				vals[i] = e.Value
+				vals[i] = e
 			}
 
 			oks[i] = (err == nil)
@@ -85,13 +85,9 @@ func (s *nutsdbStore) Get(key []byte) ([]byte, bool, error) {
 	var v []byte
 	var ok bool
 	var err error
-	var e *nutsdb.Entry
 
 	s.db.View(func(tx *nutsdb.Tx) error {
-		e, err = tx.Get(nutsdbBucket, key)
-		if e != nil {
-			v = e.Value
-		}
+		v, err = tx.Get(nutsdbBucket, key)
 		ok = err == nil
 		return err
 	})
@@ -110,20 +106,10 @@ func (s *nutsdbStore) Del(key []byte) (bool, error) {
 func (s *nutsdbStore) Keys(pattern []byte, limit int, withvals bool) ([][]byte, [][]byte, error) {
 	var keys [][]byte
 	var vals [][]byte
-
-	err := s.db.View(func(tx *nutsdb.Tx) error {
-		entries, err := tx.PrefixScan(nutsdbBucket, pattern, nutsdb.ScanNoLimit)
-
-		if err != nil {
-			return err
-		}
-
-		for i, entry := range entries {
-			keys[i] = entry.Key
-			vals[i] = entry.Value
-		}
-
-		return nil
+	var err error
+	err = s.db.View(func(tx *nutsdb.Tx) error {
+		keys, err = tx.GetKeys(nutsdbBucket)
+		return err
 	})
 
 	return keys, vals, err

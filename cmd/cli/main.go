@@ -319,11 +319,6 @@ func getStore(s string, fsync bool, path string) (kvbench.Store, string, error) 
 			path = "btree.db"
 		}
 		store, err = kvbench.NewBTreeStore(path, fsync)
-	case "bolt":
-		if path == "" {
-			path = "bolt.db"
-		}
-		store, err = kvbench.NewBoltStore(path, fsync)
 	case "bbolt":
 		if path == "" {
 			path = "bbolt.db"
